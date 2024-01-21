@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
+import './styles.css';
 
 
 export default function PasswordIndex(props: {className: string}){
@@ -49,41 +50,53 @@ export default function PasswordIndex(props: {className: string}){
 
         <div className="pw-Header">
             <h1>Password Generator</h1>
-            <h3>A project made by Jordy!</h3>
+            <a>A project made by Jordy!</a>
         </div>
 
         <div className="pw-Options">
-            <label htmlFor="">Password Length:</label>
+
+        <div className="pw-Length">
+            <label>Password Length:</label>
             <input
+            id="ip-length"
             type="number"
             min="8"
             max="32"
             value={passwordLength}
+            placeholder="min: 8 | max: 32"
             onChange={(e) => setPasswordLength(e.target.value)} required />
+        </div>
 
-            <label>Include symbols?</label>
+        <div className="pw-Checkboxes">
+            <label id="cb-symbols">symbols?</label>
             <input
+            id="cb-symbols"
             type="checkbox"
             checked={useSymbols}
             onChange={() => setUseSymbols(!useSymbols)} />
 
-            <label>Include Numbers?</label>
+            <label id="cb-numbers">numbers?</label>
             <input
+            id="cb-numbers"
             type="checkbox"
             checked={useNumbers}
             onChange={() => setUseNumbers(!useNumbers)} />
 
-            <label>Include Lower case letters?</label>
+            <label id="cb-lcLetters">lower case letters?</label>
             <input
+            id="cb-lcLetters"
             type="checkbox"
             checked={useLowerCase}
             onChange={() => setUseLowerCase(!useLowerCase)} />
 
-            <label>Include Upper case letters?</label>
+            <label id="cb-ucLetters">upper case letters?</label>
             <input
+            id="cb-ucLetters"
             type="checkbox"
             checked={useUpperCase}
             onChange={() => setUseUpperCase(!useUpperCase)}/>
+        </div>
+
         </div>
 
         <div className="pw-genButton">

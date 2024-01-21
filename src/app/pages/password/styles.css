@@ -1,0 +1,106 @@
+*{
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+}
+
+.pw-Index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.pw-Header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pw-Header > h1{
+    transition: .3s;
+    font-weight: lighter;
+    font-size: 5vh;
+    cursor: default;
+}
+.pw-Header>h1:hover{
+    transition: .3s;
+    font-weight: bold;
+    transform: scale(1.5, 1.5);
+}
+
+.pw-Header > a {
+    font-weight: lighter;
+    font-size: 2vh;
+    transition: .3s;
+}
+
+.pw-Options{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pw-Length{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom:10px;
+}
+
+.pw-Length > label{
+    margin-bottom: 5px;
+}
+
+.pw-Length > input:focus {
+    border: 0;
+    outline: 0!important;
+}
+.pw-Checkboxes{
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    margin-top: 20px;
+}
+
+.pw-Checkboxes > label{
+    align-items: center;
+    flex-direction: inline-block;
+}
+
+.pw-Checkboxes > input[type=checkbox]{
+    margin-left: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.pw-genButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.pw-genButton > button{
+    display: flex;
+    flex-direction: inline-block;
+    margin-bottom: 20px;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.pw-genButton > button:hover{
+    transition: .3s;
+    transform: scale(1.5, 1.5);
+}
+
