@@ -61,9 +61,9 @@ export default function PasswordIndex(props: {className: string}){
             id="ip-length"
             type="number"
             min="8"
-            max="32"
+            max={undefined}
             value={passwordLength}
-            placeholder="min: 8 | max: 32"
+            placeholder="min: 8 | max: undefined"
             onChange={(e) => setPasswordLength(e.target.value)} required />
         </div>
 
