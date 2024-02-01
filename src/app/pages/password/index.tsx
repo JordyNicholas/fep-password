@@ -60,41 +60,46 @@ export default function PasswordIndex(props: {className: string}){
             <input
             id="ip-length"
             type="number"
+            
             min="8"
             max={undefined}
             value={passwordLength}
             placeholder="min: 8 | max: undefined"
-            onChange={(e) => setPasswordLength(e.target.value)} required />
+            onChange={(e) => setPasswordLength(e.target.value)} required/>
         </div>
 
         <div className="pw-Checkboxes">
-            <label id="cb-symbols">symbols?</label>
             <input
             id="cb-symbols"
             type="checkbox"
             checked={useSymbols}
             onChange={() => setUseSymbols(!useSymbols)} />
+            <label id="cb-symbols">symbols?</label>
+            <br/>
 
-            <label id="cb-numbers">numbers?</label>
             <input
             id="cb-numbers"
             type="checkbox"
             checked={useNumbers}
             onChange={() => setUseNumbers(!useNumbers)} />
+            <label id="cb-numbers">numbers?</label>
+            <br/>
 
-            <label id="cb-lcLetters">lower case letters?</label>
             <input
             id="cb-lcLetters"
             type="checkbox"
             checked={useLowerCase}
             onChange={() => setUseLowerCase(!useLowerCase)} />
+            <label id="cb-lcLetters">lower case letters?</label>
+            <br/>
 
-            <label id="cb-ucLetters">upper case letters?</label>
             <input
             id="cb-ucLetters"
             type="checkbox"
             checked={useUpperCase}
             onChange={() => setUseUpperCase(!useUpperCase)}/>
+            <label id="cb-ucLetters">upper case letters?</label>
+            <br/>
         </div>
 
         </div>

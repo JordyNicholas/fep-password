@@ -60,17 +60,25 @@
 
 .pw-Length > input {
     text-align: center;
-    width: fit-content;
+    width: 08vh;
 }
 
 .pw-Checkboxes{
-    display: flex;
-    flex-direction: column;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
 .pw-Checkboxes > input[type=checkbox]{
-    margin-left: 20vh;
+    margin-left: 1vh;
+    margin-bottom: 1vh;
+}
+
+.pw-Checkboxes > label {
+    align-items: center;
+    justify-content: center;
+    text-align: right;
 }
 
 .pw-genButton{
