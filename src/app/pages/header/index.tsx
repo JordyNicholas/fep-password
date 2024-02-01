@@ -1,9 +1,10 @@
+'use client'
+
 import React, { useState } from "react";
 import './styles.css';
 
 
-
-export default function DefaultHeader(props: {img: string, firstMenu: string, secMenu: string, thirdMenu: string}) {
+export default function DefaultHeader( props: {img: string, firstMenu: string, secMenu: string, thirdMenu: string }){
 
     return(
         <div className="hd-Index">
@@ -14,9 +15,9 @@ export default function DefaultHeader(props: {img: string, firstMenu: string, se
                     alt="Image"/>
             </div>
             <div className="hd-spanList">
-                <li><a href="">{ props.firstMenu }</a></li>
-                <li><a href="">{ props.secMenu }</a></li>
-                <li><a href="">{ props.thirdMenu }</a></li>
+                <li><a href= {''}> { props.firstMenu } </a></li>
+                <li><a href= {''}> { props.secMenu } </a></li>
+                <li><a href= {''}> { props.thirdMenu } </a></li>
             </div>
 
         
