@@ -1,9 +1,10 @@
 import React from "react";
-import PasswordIndex from "./pages/passwordGenerator";
-import DefaultHeader from "./pages/header";
+import PasswordGenerator from "./pages/[passwordGenerator]";
+import DefaultHeader from "./components/header";
+import PasswordManager from "./pages/[passwordManager]";
 import './styles.css';
 
-export default function RootPage() {
+export default async function RootPage() {
 
   return (      
     <div className="root-div">
@@ -14,8 +15,10 @@ export default function RootPage() {
         secMenu="Password Manager"
         thirdMenu="About"/>
       </div>
+
       <div className="body-div">
-        <PasswordIndex className="cssTest"/>
+        <PasswordGenerator className="cssTest"/>
+        <PasswordManager/>
       </div>
     </div>
   )

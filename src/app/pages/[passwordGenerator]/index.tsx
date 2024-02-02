@@ -5,7 +5,7 @@ import { useState } from "react";
 import './styles.css';
 
 
-export default function PasswordIndex(props: {className: string}){
+export default function PasswordGenerator(props: {className: string}){
     const className = props.className;
 
     const [passwordData, setPasswordData] = useState(String);

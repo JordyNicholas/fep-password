@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import './styles.css';
 
-
 export default function DefaultHeader( props: {img: string, firstMenu: string, secMenu: string, thirdMenu: string }){
 
     return(
