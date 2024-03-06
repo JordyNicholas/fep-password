@@ -1,7 +1,7 @@
 import React from "react";
-import PasswordGenerator from "./pages/[passwordGenerator]";
+import PasswordGenerator from "./pages/passwordGenerator/page";
 import DefaultHeader from "./components/header";
-import PasswordManager from "./pages/[passwordManager]";
+import PasswordManager from "./pages/passwordManager/page";
 import './styles.css';
 
 export default async function RootPage() {
